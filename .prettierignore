@@ -1,0 +1,8 @@
+node_modules/
+generated/
+lib/
+dist/
+/site/
+*.scss
+package-lock.json
+yarn.lock

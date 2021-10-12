@@ -1,0 +1,41 @@
+{
+  "name": "@yozo/epweb",
+  "version": "1.5.3",
+  "description": "epweb components",
+  "main": "./dist/epweb.umd.js",
+  "module": "./dist/epweb.es.js",
+  "style": "./dist/index.css",
+  "exports": {
+    ".": {
+      "require": "./dist/epweb.umd.js",
+      "import": "./dist/epweb.es.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@alifd/next": "^1.23.25",
+    "@alifd/theme-yozo-default": "^0.4.15",
+    "@types/react": "^17.0.27",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-router-dom": "^5.3.1",
+    "@vitejs/plugin-react": "^1.0.2",
+    "classnames": "^2.3.1",
+    "moment": "^2.29.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.3.0",
+    "sass": "^1.42.1",
+    "typescript": "^4.4.3",
+    "vite": "^2.6.5",
+    "vite-plugin-svg-icons": "^1.0.5"
+  },
+  "author": "yozo",
+  "license": "MIT"
+}

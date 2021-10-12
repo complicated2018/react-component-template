@@ -1,0 +1,56 @@
+.loadContainer {
+  position: relative;
+  margin: 0 auto;
+}
+
+.load .loader {
+  position: relative;
+  top: -36px;
+  width: 1em;
+  height: 1em;
+  margin: 0 auto !important;
+  font-size: 10px;
+  text-indent: -9999em;
+  border-radius: 50%;
+  animation: load 1s infinite ease-in-out;
+  animation-delay: -.17s;
+
+  &::before, &::after {
+    position: absolute;
+    top: 0;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    animation: load 1s infinite ease-in-out;
+    content: '';
+  }
+
+  &::before {
+    left: -2em;
+    animation-delay: -.34s;
+  }
+
+  &::after {
+    left: 2em;
+  }
+}
+
+@-webkit-keyframes load {
+  0%, 50%, 100% {
+    box-shadow: 0 2.5em 0 -1.3em $color-black;
+  }
+
+  50% {
+    box-shadow: 0 2.5em 0 0 $color-black;
+  }
+}
+
+@keyframes load {
+  0%, 50%, 100% {
+    box-shadow: 0 2.5em 0 -1.3em $color-black;
+  }
+
+  50% {
+    box-shadow: 0 2.5em 0 0 $color-black;
+  }
+}

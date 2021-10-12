@@ -1,0 +1,45 @@
+{ // file: vscode setting.json
+  // onSave
+  "editor.formatOnSave": true, //每次保存的时候自动格式化
+  // eslint
+  "eslint.alwaysShowStatus": true, // 总是在 VSCode 显示 ESLint 的状态
+  "eslint.quiet": true, // 忽略 warning 的错误
+  "editor.codeActionsOnSave": { // 保存时使用 ESLint 修复可修复错误
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  // prettier
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
