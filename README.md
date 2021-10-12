@@ -1,4 +1,5 @@
-yozo react component lib
+# react组件库模板
+lerna + vite + react-ts + dumi + jtest + enzyme
 
 ```bash
 # 安装lerna

@@ -1,4 +1,5 @@
-@yozo/epweb组件库
+# 组件库开发
+lerna + vite + react-ts + dumi + jtest + enzyme
 
 ```bash
 # 安装nrm
