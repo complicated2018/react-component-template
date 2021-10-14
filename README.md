@@ -7,6 +7,7 @@ $ yarn global add lerna
 $ npm i lerna -g
 ```
 
+
 ```bash
 # 安装依赖
 # 会把所有包的依赖安装到根node_modules
