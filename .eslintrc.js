@@ -6,14 +6,18 @@ module.exports = {
   extends: ['plugin:@typescript-eslint/recommended', 'airbnb-typescript', 'plugin:prettier/recommended'],
   env: {
     browser: true,
+    commonjs: true,
     es2021: true,
+    node: true,
     jest: true,
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: './packages/epweb/tsconfig.json',
+    project: 'tsconfig.json',
     ecmaFeatures: {
       jsx: true,
+      typescript: true,
+      tsx: true,
     },
     ecmaVersion: 12,
     sourceType: 'module',
@@ -50,5 +54,6 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn', // 提示useEffect可能重复执行
     '@typescript-eslint/no-explicit-any': 0,
+    '@typescript-eslint/ban-types': 0,
   },
 };

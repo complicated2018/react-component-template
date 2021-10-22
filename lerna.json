@@ -6,7 +6,7 @@
   "command": {
     "publish": {
       "conventionalCommits": true,
-      "registry": "https://npm.yozocloud.cn:4873/",
+      "message": "chore(release): publish",
       "access": "public"
     }
   }

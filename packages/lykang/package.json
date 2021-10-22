@@ -1,14 +1,14 @@
 {
-  "name": "@yozo/epweb",
-  "version": "1.5.3",
-  "description": "epweb components",
-  "main": "./dist/epweb.umd.js",
-  "module": "./dist/epweb.es.js",
+  "name": "@lusf/lykang",
+  "version": "1.7.1",
+  "description": "lykang components",
+  "main": "./dist/lykang.umd.js",
+  "module": "./dist/lykang.es.js",
   "style": "./dist/index.css",
   "exports": {
     ".": {
-      "require": "./dist/epweb.umd.js",
-      "import": "./dist/epweb.es.js"
+      "require": "./dist/lykang.umd.js",
+      "import": "./dist/lykang.es.js"
     }
   },
   "files": [
@@ -21,7 +21,6 @@
   },
   "devDependencies": {
     "@alifd/next": "^1.23.25",
-    "@alifd/theme-yozo-default": "^0.4.15",
     "@types/react": "^17.0.29",
     "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.3.1",
@@ -36,6 +35,6 @@
     "vite": "^2.6.7",
     "vite-plugin-svg-icons": "^1.0.5"
   },
-  "author": "yozo",
+  "author": "lusf",
   "license": "MIT"
 }

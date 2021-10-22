@@ -1,12 +1,10 @@
-# react组件库模板
-lerna + vite + react-ts + dumi + jtest + enzyme
+lusf react component lib
 
 ```bash
 # 安装lerna
 $ yarn global add lerna
 $ npm i lerna -g
 ```
-
 
 ```bash
 # 安装依赖
@@ -19,8 +17,8 @@ $ lerna bootstrap
 # --dev devDependencies 替代 dependencies
 # --exact 安装准确版本，就是安装的包版本前面不带^, Eg: "^2.20.0" ➜ "2.20.0"
 $ lerna add <package>[@version] [--dev] [--exact] --scope scopeName
+# 例：lerna add lodash --scope @lusf/lykang
 ```
-例：lerna add lodash --scope @yozo/epweb
 
 ```bash
 # 删除所有包的node_modules目录
@@ -36,8 +34,13 @@ $ lerna changed
 ```
 
 ```bash
-# 编译epweb组件库
-$ yarn build:epweb
+# git 提交
+$ yarn commit
+```
+
+```bash
+# 编译lykang组件库
+$ yarn build:lykang
 ```
 
 ```bash

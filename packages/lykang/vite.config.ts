@@ -1,7 +1,7 @@
 import react from '@vitejs/plugin-react';
 import path from 'path';
 import { defineConfig } from 'vite';
-import viteSvgIcons from 'vite-plugin-svg-icons';
+// import viteSvgIcons from 'vite-plugin-svg-icons';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -17,7 +17,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "@alifd/theme-yozo-default/variables.scss";`,
+        additionalData: `@import "@alifd/theme-epweb-default/variables.scss";`,
       },
     },
   },
@@ -33,8 +33,8 @@ export default defineConfig({
     },
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'epweb',
-      fileName: (format) => `epweb.${format}.js`,
+      name: 'lykang',
+      fileName: format => `lykang.${format}.js`,
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
@@ -57,12 +57,12 @@ export default defineConfig({
   },
   plugins: [
     react(),
-    viteSvgIcons({
-      // Specify the icon folder to be cached
-      iconDirs: [path.resolve(__dirname, 'src/icons')],
-      // Specify symbolId format
-      symbolId: 'icon-[dir]-[name]',
-    }),
+    // viteSvgIcons({
+    //   // Specify the icon folder to be cached
+    //   iconDirs: [path.resolve(__dirname, 'src/icons')],
+    //   // Specify symbolId format
+    //   symbolId: 'icon-[dir]-[name]',
+    // }),
   ],
   server: {
     port: 8080, // 开发环境启动的端口

@@ -1,8 +1,9 @@
 // prettier config for react project
 module.exports = {
-  printWidth: 120,
-  tabWidth: 2,
-  semi: true,
   singleQuote: true,
+  tabWidth: 2,
   trailingComma: 'all',
+  printWidth: 150,
+  arrowParens: 'avoid',
+  semi: true,
 };
