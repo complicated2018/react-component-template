@@ -32,13 +32,9 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,md,json}": [
-      "prettier --write",
-      "eslint --fix"
-    ],
     "*.ts?(x)": [
-      "prettier --parser=typescript --write",
-      "eslint --fix"
+      "prettier --write",
+      "yarn lint:eslint:lykang"
     ],
     "*.{scss,css}": [
       "stylelint --fix"
